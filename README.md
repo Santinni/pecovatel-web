@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pecovatel Web Application
 
-## Getting Started
+Modern web application built with Next.js 15+ and PayloadCMS, designed for scalability and maintainability.
 
-First, run the development server:
+## 🛠 Technology Stack
+
+- **Node.js**: v20.9.x (required for PayloadCMS and Next.js 15+)
+- **Next.js**: v15.1.x
+- **React**: v19.0.x
+- **TypeScript**: v5.x
+- **Package Manager**: pnpm
+- **CMS**: PayloadCMS (Headless CMS for content management)
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- Node.js v20.x
+- pnpm (latest version)
+
+## 🚀 Getting Started
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+git clone [repository-url]
+cd pecovatel-web
+```
+
+2. Install dependencies:
+
+```bash
+pnpm install
+```
+
+3. Set up environment variables:
+
+```bash
+cp .env.example .env
+```
+
+Configure your environment variables accordingly, including PayloadCMS credentials.
+
+4. Run the development server:
+
+```bash
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📚 Development Guidelines
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project follows development guidelines and best practices defined in the [Rules](./.cursorrules) file. These rules serve not only as prompts for [Cursor AI](https://cursor.com) but as standards and conventions for the entire project.
 
-## Learn More
+- The rules cover:
 
-To learn more about Next.js, take a look at the following resources:
+  - Development philosophy and principles
+  - Code writing standards
+  - Naming conventions
+  - Best practices for React, Next.js and TypeScript
+  - Application state management
+  - UI and styling
+  - Testing and documentation
+  - Security and accessibility
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- When creating new rules, it's important to remember they serve as a comprehensive guide for the entire development team.
+- Additional useful prompts for Cursor AI can be found at [cursor.directory](https://cursor.directory).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🏗 Project Structure
 
-## Deploy on Vercel
+```
+pecovatel-web/
+├── app/                # Next.js 15+ App Router
+├── components/         # Reusable React components
+├── lib/               # Utility functions and shared logic
+├── public/            # Static assets
+└── styles/            # Global styles and CSS modules
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔗 PayloadCMS Integration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is integrated with PayloadCMS for content management. The CMS configuration and setup details will be available in the PayloadCMS specific documentation.
+
+## 🧪 Testing
+
+```bash
+pnpm test        # Run unit tests
+pnpm test:e2e    # Run end-to-end tests
+```
+
+## 🚀 Deployment
+
+```bash
+pnpm build
+pnpm start
+```
+
+## 📝 License
+
+[License Type] - see the [LICENSE.md](LICENSE.md) file for details
+
+## 👥 Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
